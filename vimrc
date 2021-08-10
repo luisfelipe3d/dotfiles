@@ -1,8 +1,3 @@
-call plug#begin()
-Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
-Plug 'preservim/nerdtree'
-call plug#end()
-
 set autowrite
 set tabstop=4
 set softtabstop=4
@@ -16,3 +11,4 @@ set incsearch
 set ignorecase
 set smartcase
 set encoding=utf-8
+set number
