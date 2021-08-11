@@ -1,5 +1,8 @@
 [alias]
     co = checkout
+    cob = checkout -b
+    cm = checkout master
+    bd = branch -D
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     cm = commit
     ac = !git add -A && git commit
@@ -10,6 +13,13 @@
     pl = !git pull --commit && git push
     last = log -1 HEAD --stat
     se = !git rev-list --all | xargs git grep -F
+    set-upstream = \
+       !git branch \
+           --set-upstream-to=origin/`git symbolic-ref --short HEAD`
+    unstage = reset HEAD
+    undo-commit = reset --soft HEAD^
+    poh = push origin HEAD
+    pulloh = pull origin HEAD
 [user]
 	name = Luis Leal
 	email = luis.2018108800@unicap.br
@@ -23,3 +33,9 @@
     tool = vimdiff
 [help]
 	autocorrect = 20
+[color]
+    status = auto
+    diff = auto
+    branch = auto
+    interactive = auto
+    ui = true
