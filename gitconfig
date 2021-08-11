@@ -33,3 +33,9 @@
     tool = vimdiff
 [help]
 	autocorrect = 20
+[color]
+    status = auto
+    diff = auto
+    branch = auto
+    interactive = auto
+    ui = true
