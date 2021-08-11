@@ -11,3 +11,11 @@
 [user]
 	name = Luis Leal
 	email = luis.2018108800@unicap.br
+[core]
+    editor = vim
+[pull]
+    rebase = false
+[diff]
+    tool = vimdiff
+[merge]
+    tool = vimdiff
