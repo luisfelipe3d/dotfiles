@@ -6,7 +6,8 @@
     st = status -sb
     tags = tag -l
     branches = branch -a
-    remotes = remote -v
+    rmt = remote -v
+    pl = !git pull --commit && git push
 [user]
 	name = Luis Leal
 	email = luis.2018108800@unicap.br
