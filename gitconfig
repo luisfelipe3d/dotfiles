@@ -13,6 +13,13 @@
     pl = !git pull --commit && git push
     last = log -1 HEAD --stat
     se = !git rev-list --all | xargs git grep -F
+    set-upstream = \
+       !git branch \
+           --set-upstream-to=origin/`git symbolic-ref --short HEAD`
+    unstage = reset HEAD
+    undo-commit = reset --soft HEAD^
+    poh = push origin HEAD
+    pulloh = pull origin HEAD
 [user]
 	name = Luis Leal
 	email = luis.2018108800@unicap.br
