@@ -1,5 +1,8 @@
 [alias]
     co = checkout
+    cob = checkout -b
+    cm = checkout master
+    bd = branch -D
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     cm = commit
     ac = !git add -A && git commit
