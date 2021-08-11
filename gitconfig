@@ -1,13 +1,15 @@
 [alias]
     co = checkout
-    lg = log --all --graph --decorate --oneline --abbrev-commit
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     cm = commit
     ac = !git add -A && git commit
     st = status -sb
     tags = tag -l
-    branches = branch -a
-    rmt = remote -v
+    ba = branch -a
+    rv = remote -v
     pl = !git pull --commit && git push
+    last = log -1 HEAD --stat
+    se = !git rev-list --all | xargs git grep -F
 [user]
 	name = Luis Leal
 	email = luis.2018108800@unicap.br
@@ -19,3 +21,5 @@
     tool = vimdiff
 [merge]
     tool = vimdiff
+[help]
+	autocorrect = 20
