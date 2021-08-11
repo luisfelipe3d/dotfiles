@@ -12,3 +12,4 @@ set ignorecase
 set smartcase
 set encoding=utf-8
 set number
+set clipboard=unnamedplus

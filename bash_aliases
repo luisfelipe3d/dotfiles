@@ -9,3 +9,4 @@ alias egrep='egrep --color=auto'
 
 alias ip='ip -c'
 alias su='su -'
+alias vi='vim'
