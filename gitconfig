@@ -23,7 +23,6 @@
     pulloh = pull origin HEAD
 [user]
 	name = Luis Leal
-	email = luis.2018108800@unicap.br
     signingKey = 6D26394D178EE99D
 [core]
     editor = vim
