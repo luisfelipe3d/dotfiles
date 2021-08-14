@@ -13,3 +13,5 @@ set smartcase
 set encoding=utf-8
 set number
 set clipboard=unnamedplus
+syntax on
+set relativenumber 
