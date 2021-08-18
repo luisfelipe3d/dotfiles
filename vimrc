@@ -15,3 +15,4 @@ set number
 set clipboard=unnamedplus
 syntax on
 set relativenumber 
+set mouse=a
